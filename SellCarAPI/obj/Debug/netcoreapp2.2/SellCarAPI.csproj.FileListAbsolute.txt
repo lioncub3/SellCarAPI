@@ -1,0 +1,14 @@
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\bin\Debug\netcoreapp2.2\SellCarAPI.deps.json
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\bin\Debug\netcoreapp2.2\SellCarAPI.runtimeconfig.json
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\bin\Debug\netcoreapp2.2\SellCarAPI.runtimeconfig.dev.json
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\bin\Debug\netcoreapp2.2\SellCarAPI.dll
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\bin\Debug\netcoreapp2.2\SellCarAPI.pdb
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.csprojAssemblyReference.cache
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.csproj.CoreCompileInputs.cache
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.RazorAssemblyInfo.cache
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.RazorAssemblyInfo.cs
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.AssemblyInfoInputs.cache
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.AssemblyInfo.cs
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.RazorTargetAssemblyInfo.cache
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.dll
+C:\Users\s28-vp\source\repos\SellCarAPI\SellCarAPI\obj\Debug\netcoreapp2.2\SellCarAPI.pdb
