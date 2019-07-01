@@ -24,8 +24,7 @@ namespace SellCarAPI.Migrations
                         .ValueGeneratedOnAdd()
                         .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-                    b.Property<string>("Brand")
-                        .IsRequired();
+                    b.Property<string>("Brand");
 
                     b.Property<string>("Color");
 

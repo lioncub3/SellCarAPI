@@ -1,0 +1,81 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+
+<link rel="stylesheet" href="~/bootstrap/dist/css/bootstrap.min.css" />
+
+<form class="form-inline">
+    <input id="Name" class="form-control" name="Name" placeholder="Назва" />
+    <input id="Brand" class="form-control" name="Brand" placeholder="Марка" />
+    <input id="Price" type="number" class="form-control" name="Price" placeholder="Ціна" />
+    <input id="Color" class="form-control" name="Color" placeholder="Колір" />
+</form>
+<button id="add-car" class="btn btn-success">Добавити</button>
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>ID</th>
+            <th>Назва</th>
+            <th>Марка</th>
+            <th>Ціна</th>
+            <th>Колір</th>
+            <th>Дії</th>
+        </tr>
+    </thead>
+    <tbody id="car-data">
+    </tbody>
+</table>
+
+<script src="~/jquery/jquery.js"></script>
+<script>
+    $(function () {
+        var url = 'https://localhost:44326/api/cars';
+        $.ajax({
+            method: 'GET',
+            url: url,
+            success: function (cars) {
+                var count = cars.length;
+                for (var i = 0; i < count; i++) {
+                    $('#car-data').append('<tr>' +
+                        '<td>' + cars[i]['id'] + '</td>' +
+                        '<td>' + cars[i]['name'] + '</td>' +
+                        '<td>' + cars[i]['brand'] + '</td>' +
+                        '<td>' + cars[i]['price'] + '</td>' +
+                        '<td>' + cars[i]['color'] + '</td>' +
+                        '<td><button id= class=\'btn btn-danger\'>Видалити</button></td>' +
+                        '</tr>');
+                }
+            }
+        });
+
+        $('#add-car').click(function () {
+            var car = {
+                Name: $('#Name').val(),
+                Brand: $('#Brand').val(),
+                Price: $('#Price').val(),
+                Color: $('#Color').val()
+            };
+
+            $.ajax({
+                url: url,
+                type: 'POST',
+                contentType: "application/json",
+                data: JSON.stringify(car),
+                success: function (car) {
+                    $('#car-data').append('<tr>' +
+                        '<td>' + car['id'] + '</td>' +
+                        '<td>' + car['name'] + '</td>' +
+                        '<td>' + car['brand'] + '</td>' +
+                        '<td>' + car['price'] + '</td>' +
+                        '<td>' + car['color'] + '</td>' +
+                        '<td><button class=\'btn btn-danger\'>Видалити</button></td>' +
+                        '</tr>');
+                }
+            });
+        });
+
+
+    });
+</script>

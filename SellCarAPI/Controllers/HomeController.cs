@@ -8,10 +8,9 @@ namespace SellCarAPI.Controllers
 {
     public class HomeController : Controller
     {
-        [Route("Cars/{brand:alpha}/{year:int:min(1970)}/{color:alpha?}")]
-        public IActionResult Index(string brand, int year, string color = "black")
+        public IActionResult Index()
         {
-            return Content($"Brand: {brand}, \nyear: {year}, \ncolor: {color}");
+            return View();
         }
     }
 }
